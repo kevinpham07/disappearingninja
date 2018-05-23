@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Disappearing Ninja</title>
+	<style>
+		img{
+			height: 200px;
+			width: 100px;
+		}
+	</style>
+	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+
+			$('img').click(function(){
+				$(this).css('visibility', 'hidden');
+			})
+			$('button').click(function(){
+				$('img').css('visibility', 'visible');
+			})
+		})
+	</script>
+</head>
+<body>
+	<img src='naruto.png' alt='naruto'>
+	<img src='naruto.png' alt='naruto'>
+	<img src='naruto.png' alt='naruto'>
+	<img src='naruto.png' alt='naruto'>
+	<img src='naruto.png' alt='naruto'>
+	<img src='naruto.png' alt='naruto'>
+	<img src='naruto.png' alt='naruto'>
+	<img src='naruto.png' alt='naruto'>
+	<br>
+	<button type='button'>Restore</button>
+</body>
